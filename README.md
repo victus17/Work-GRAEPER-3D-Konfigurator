@@ -293,3 +293,5 @@ CAD-Export und weitere Sprachen.
 <div align="center">
 <sub>Interne Entwicklung für die GRÄPER-Gruppe · Alle Rechte vorbehalten · Planungsstand ohne Gewähr – verbindlich sind Angebot und technische Klärung durch GRÄPER</sub>
 </div>
+
+[Orientierung im Quellcode](docs/CODE_MAP.md)
