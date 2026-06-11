@@ -197,7 +197,7 @@ function Modals() {
     if (modal !== 'teilen') return;
     setLink('');
     (async () => {
-      try { const r = await api<{ id: string }>('/api/configurations', { method: 'POST', body: JSON.stringify({ name: config.projectName, config }) }); setLink(`${location.origin}${location.pathname}?k=${r.id}`); }
+      try { /* JSON kodiert den aktuellen Wert als Text; Referenzen zwischen Objekten bleiben dabei nicht erhalten. */ const r = await api<{ id: string }>('/api/configurations', { method: 'POST', body: JSON.stringify({ name: config.projectName, config }) }); setLink(`${location.origin}${location.pathname}?k=${r.id}`); }
       catch { setLink(`${location.origin}${location.pathname}#c=${await encodeConfig(config)}`); }
     })();
   }, [modal, config]);
