@@ -163,7 +163,7 @@ export const useStore = create<State>((set, get) => ({
   toast: (text, kind = 'ok') => {
     const id = toastId++;
     set((s) => ({ toasts: [...s.toasts.slice(-2), { id, text, kind }] }));
-    setTimeout(() => get().dismissToast(id), 4200);
+    /* Die Verzögerung ist eine Mindestwartezeit; ein belegter Ereignis-Loop kann den Aufruf später ausführen. */ setTimeout(() => get().dismissToast(id), 4200);
   },
   dismissToast: (id) => set((s) => ({ toasts: s.toasts.filter((t) => t.id !== id) })),
   saveLocal: (name) => {
