@@ -404,7 +404,7 @@ export function normalize(input: Config): Config {
   }
   if (c.building.kind === 'begehbar') {
     const w = clampWalkIn(c);
-    if (JSON.stringify(w) !== JSON.stringify(c.building.walkIn)) patchB({ walkIn: w });
+    /* JSON kodiert den aktuellen Wert als Text; Referenzen zwischen Objekten bleiben dabei nicht erhalten. */ if (JSON.stringify(w) !== JSON.stringify(c.building.walkIn)) patchB({ walkIn: w });
   }
   // Begehbare Stationen und Trafostände werden grundsätzlich mit dem Autokran versetzt.
   if (c.building.kind !== 'kompakt' && c.site.unloading === 'bordkran') c = { ...c, site: { ...c.site, unloading: 'autokran' } };
