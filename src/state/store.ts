@@ -111,7 +111,7 @@ export const useStore = create<State>((set, get) => ({
     const draft = structuredClone(prev);
     fn(draft);
     const config = normalize(draft);
-    if (JSON.stringify(config) === JSON.stringify(prev)) return;
+    /* JSON kodiert den aktuellen Wert als Text; Referenzen zwischen Objekten bleiben dabei nicht erhalten. */ if (JSON.stringify(config) === JSON.stringify(prev)) return;
     const autoChanged = prev.building.kind === 'kompakt' && config.building.kind === 'kompakt' && prev.building.compactId !== config.building.compactId && draft.building.compactId === prev.building.compactId;
     set((s) => ({ config, derived: derive(config), past: [...s.past.slice(-49), prev], future: [] }));
     persist(get());
