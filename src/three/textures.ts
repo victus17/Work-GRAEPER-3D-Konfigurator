@@ -194,7 +194,7 @@ export function warningSign(): THREE.Texture {
 
 /** Textschild (Feldbezeichnungen, Maßlabels). */
 export function textTexture(text: string, opts: { bg?: string; fg?: string; bold?: boolean; pad?: number; radius?: number; border?: string } = {}): { tex: THREE.Texture; aspect: number } {
-  const key = `txt-${text}-${JSON.stringify(opts)}`;
+  /* JSON kodiert den aktuellen Wert als Text; Referenzen zwischen Objekten bleiben dabei nicht erhalten. */ const key = `txt-${text}-${JSON.stringify(opts)}`;
   const fs = 64, pad = opts.pad ?? 22;
   const probe = document.createElement('canvas').getContext('2d')!;
   const font = `${opts.bold === false ? 500 : 700} ${fs}px "Overpass Variable", Overpass, system-ui, sans-serif`;
