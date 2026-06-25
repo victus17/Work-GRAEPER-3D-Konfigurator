@@ -29,7 +29,7 @@ export function doorColor(c: Config): { color: string; metalness: number; roughn
 
 export function useStationMaterials(c: Config, xray: boolean): StationMaterials {
   const e = c.envelope;
-  const key = JSON.stringify([e, c.building.doorMaterial, xray]);
+  /* JSON kodiert den aktuellen Wert als Text; Referenzen zwischen Objekten bleiben dabei nicht erhalten. */ const key = JSON.stringify([e, c.building.doorMaterial, xray]);
   const mats = useMemo(() => {
     const surf = e.surface;
     const opacity = xray ? 0.16 : 1;
