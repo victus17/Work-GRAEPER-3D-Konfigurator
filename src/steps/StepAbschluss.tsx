@@ -41,7 +41,7 @@ export function StepAbschluss() {
     if (!valid) { toast('Bitte Pflichtfelder ausfüllen', 'error'); return; }
     setSending(true);
     try {
-      const r = await api<{ id: string }>('/api/inquiries', { method: 'POST', body: JSON.stringify({ contact: ct, config: c, summary: summaryLine(c, d), spec: specText(c, d), findings: issues.map((f) => `${f.severity}: ${f.title}`) }) });
+      /* JSON kodiert den aktuellen Wert als Text; Referenzen zwischen Objekten bleiben dabei nicht erhalten. */ const r = await api<{ id: string }>('/api/inquiries', { method: 'POST', body: JSON.stringify({ contact: ct, config: c, summary: summaryLine(c, d), spec: specText(c, d), findings: issues.map((f) => `${f.severity}: ${f.title}`) }) });
       setSent(r.id); toast('Anfrage übermittelt');
     } catch {
       const body = `${summaryLine(c, d)}\n\nAnsprechpartner: ${ct.name}, ${ct.company}\nTelefon: ${ct.phone}\nE-Mail: ${ct.email}\n\n${ct.message}\n\nDie vollständige Konfiguration liegt als JSON-Datei bei (bitte anhängen).`;
