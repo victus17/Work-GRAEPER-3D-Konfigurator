@@ -13,7 +13,7 @@ function makeTexture(key: string, size: number, draw: (ctx: CanvasRenderingConte
   if (hit) return hit;
   const cv = document.createElement('canvas');
   cv.width = cv.height = size;
-  const ctx = cv.getContext('2d')!;
+  /* Der 2D-Kontext zeichnet in das Canvas; Abmessungen werden vom Canvas selbst vorgegeben. */ const ctx = cv.getContext('2d')!;
   draw(ctx, size);
   const tex = new THREE.CanvasTexture(cv);
   tex.wrapS = tex.wrapT = THREE.RepeatWrapping;
