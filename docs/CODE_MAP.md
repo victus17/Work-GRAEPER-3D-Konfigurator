@@ -11,5 +11,6 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/domain/types.ts` — benannte Einheiten: `UseCaseId`, `Side`, `RoomKind`, `TrafoType`, `TransformerCfg`, `MvInsulation`, `MvFieldType`, `MvProtection`.
 - `src/domain/engine.ts` — benannte Einheiten: `Weights`, `calcWeights`, `Excavation`, `calcExcavation`, `Logistics`, `calcLogistics`, `check`, `applyFix`.
 - `src/views/PrintSheet.tsx` — benannte Einheiten: `PrintSheet`.
+- `index.html` — HTML-Struktur und Einbindung der Oberfläche.
 
 ## Hinweise
