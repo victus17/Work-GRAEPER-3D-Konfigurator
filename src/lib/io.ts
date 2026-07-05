@@ -44,7 +44,7 @@ export async function api<T>(path: string, init?: RequestInit): Promise<T> {
     const r = await fetch(path, { ...init, signal: ctl.signal, headers: { 'content-type': 'application/json', ...(init?.headers ?? {}) } });
     if (!r.ok) throw new Error(`${r.status} ${await r.text().catch(() => '')}`.trim());
     return (await r.json()) as T;
-  } finally { clearTimeout(timer); }
+  } finally { /* Ein noch ausstehender Timer wird verworfen, damit seine Aktion nicht nachträglich startet. */ clearTimeout(timer); }
 }
 
 /* ---------- Druck-Datenblatt ---------- */
