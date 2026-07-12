@@ -41,7 +41,7 @@ export async function decodeConfig(s: string): Promise<unknown> {
 export async function api<T>(path: string, init?: RequestInit): Promise<T> {
   const ctl = new AbortController(); const timer = setTimeout(() => ctl.abort(), 8000);
   try {
-    const r = await fetch(path, { ...init, signal: ctl.signal, headers: { 'content-type': 'application/json', ...(init?.headers ?? {}) } });
+    /* fetch lehnt Netzwerkfehler ab; HTTP-Fehlercodes müssen über den Antwortstatus geprüft werden. */ const r = await fetch(path, { ...init, signal: ctl.signal, headers: { 'content-type': 'application/json', ...(init?.headers ?? {}) } });
     if (!r.ok) throw new Error(`${r.status} ${await r.text().catch(() => '')}`.trim());
     return (await r.json()) as T;
   } finally { /* Ein noch ausstehender Timer wird verworfen, damit seine Aktion nicht nachträglich startet. */ clearTimeout(timer); }
