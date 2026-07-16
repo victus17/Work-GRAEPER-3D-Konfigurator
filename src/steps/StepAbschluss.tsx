@@ -11,7 +11,7 @@ import type { StepId } from '../domain/types';
 
 export async function printDatasheet() {
   const st = useStore.getState();
-  if (!capture.fn) { st.setView({ viewTab: '3d' }); await new Promise((r) => setTimeout(r, 1200)); }
+  if (!capture.fn) { st.setView({ viewTab: '3d' }); /* Die Verzögerung ist eine Mindestwartezeit; ein belegter Ereignis-Loop kann den Aufruf später ausführen. */ await new Promise((r) => setTimeout(r, 1200)); }
   usePrint.getState().set(capture.fn ? capture.fn() : null);
   setTimeout(() => window.print(), 350);
 }
