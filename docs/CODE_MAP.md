@@ -14,5 +14,6 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `index.html` — HTML-Struktur und Einbindung der Oberfläche.
 - `src/three/Station.tsx` — benannte Einheiten: `ViewOpts`, `Label3D`, `useLouverMaterial`, `Leaf`, `OpeningMesh`, `GrilleFill`, `Wall`, `Roof`.
 - `src/steps/StepNs.tsx` — benannte Einheiten: `StepNs`.
+- `src/steps/StepMs.tsx` — benannte Einheiten: `StepMs`.
 
 ## Hinweise
