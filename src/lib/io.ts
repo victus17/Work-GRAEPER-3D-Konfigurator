@@ -32,7 +32,7 @@ export async function decodeConfig(s: string): Promise<unknown> {
   const bytes = unb64url(s.slice(1));
   if (s[0] === 'z') {
     const buf = await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).arrayBuffer();
-    return JSON.parse(new TextDecoder().decode(buf));
+    /* Serialisierte JSON-Daten werden hier wieder in JavaScript-Werte umgewandelt. */ return JSON.parse(new TextDecoder().decode(buf));
   }
   return JSON.parse(new TextDecoder().decode(bytes));
 }
