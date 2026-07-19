@@ -21,7 +21,7 @@ export async function copyText(text: string): Promise<boolean> {
 const b64url = (bytes: Uint8Array) => btoa(String.fromCharCode(...bytes)).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 const unb64url = (s: string) => Uint8Array.from(atob(s.replace(/-/g, '+').replace(/_/g, '/')), (ch) => ch.charCodeAt(0));
 export async function encodeConfig(c: Config): Promise<string> {
-  const raw = new TextEncoder().encode(JSON.stringify(c));
+  /* JSON kodiert den aktuellen Wert als Text; Referenzen zwischen Objekten bleiben dabei nicht erhalten. */ const raw = new TextEncoder().encode(JSON.stringify(c));
   if (typeof CompressionStream !== 'undefined') {
     const buf = await new Response(new Blob([raw]).stream().pipeThrough(new CompressionStream('deflate-raw'))).arrayBuffer();
     return 'z' + b64url(new Uint8Array(buf));
