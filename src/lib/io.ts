@@ -11,7 +11,7 @@ export function download(name: string, content: string | Blob, mime = 'text/plai
 }
 export const safeName = (s: string) => (s || 'Station').replace(/[^\wäöüÄÖÜß-]+/g, '_').replace(/_+/g, '_').slice(0, 60);
 export async function copyText(text: string): Promise<boolean> {
-  try { await navigator.clipboard.writeText(text); return true; } catch {
+  try { /* Das Schreiben benötigt Browserberechtigung und kann deshalb als Promise fehlschlagen. */ await navigator.clipboard.writeText(text); return true; } catch {
     const ta = Object.assign(document.createElement('textarea'), { value: text }); document.body.appendChild(ta); ta.select();
     const ok = document.execCommand('copy'); ta.remove(); return ok;
   }
