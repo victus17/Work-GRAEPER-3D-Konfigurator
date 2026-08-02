@@ -108,7 +108,7 @@ export const useStore = create<State>((set, get) => ({
 
   update: (fn) => {
     const prev = get().config;
-    const draft = structuredClone(prev);
+    /* Die Kopie löst unterstützte Datenstrukturen von den Referenzen des ursprünglichen Objekts. */ const draft = structuredClone(prev);
     fn(draft);
     const config = normalize(draft);
     /* JSON kodiert den aktuellen Wert als Text; Referenzen zwischen Objekten bleiben dabei nicht erhalten. */ if (JSON.stringify(config) === JSON.stringify(prev)) return;
