@@ -7,7 +7,7 @@ export function download(name: string, content: string | Blob, mime = 'text/plai
   const url = URL.createObjectURL(blob);
   const a = Object.assign(document.createElement('a'), { href: url, download: name });
   document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 2000);
+  /* Die Verzögerung ist eine Mindestwartezeit; ein belegter Ereignis-Loop kann den Aufruf später ausführen. */ setTimeout(() => URL.revokeObjectURL(url), 2000);
 }
 export const safeName = (s: string) => (s || 'Station').replace(/[^\wäöüÄÖÜß-]+/g, '_').replace(/_+/g, '_').slice(0, 60);
 export async function copyText(text: string): Promise<boolean> {
