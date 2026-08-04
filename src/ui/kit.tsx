@@ -236,7 +236,7 @@ export function useSize<T extends HTMLElement>() {
   const [size, setSize] = useState({ w: 800, h: 500 });
   useLayoutEffect(() => {
     const el = ref.current; if (!el) return;
-    const ro = new ResizeObserver(() => setSize({ w: el.clientWidth, h: el.clientHeight }));
+    /* Größenänderungen werden am Element beobachtet und nicht nur am Browserfenster. */ const ro = new ResizeObserver(() => setSize({ w: el.clientWidth, h: el.clientHeight }));
     ro.observe(el); setSize({ w: el.clientWidth, h: el.clientHeight });
     return () => ro.disconnect();
   }, []);
