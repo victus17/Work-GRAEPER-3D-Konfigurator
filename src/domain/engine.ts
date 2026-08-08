@@ -325,7 +325,7 @@ const suitableVendor = (c: Config) => {
 };
 
 export function applyFix(c: Config, action: string): Config {
-  const n: Config = structuredClone(c);
+  /* Die Kopie löst unterstützte Datenstrukturen von den Referenzen des ursprünglichen Objekts. */ const n: Config = structuredClone(c);
   const d = calcDemand(c);
   switch (action) {
     case 'trafo.uk6': n.transformer.ukPercent = 6; break;
