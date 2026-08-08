@@ -101,7 +101,7 @@ function Wall({ side, g, c, m, opts }: { side: Side; g: Geometry; c: Config; m: 
   const ops = g.openings.filter((o) => o.side === side);
   const holes: Hole[] = ops.map((o) => { const u = toU(side, o.c); return { u0: u - o.w / 2, u1: u + o.w / 2, v0: o.y0, v1: o.y0 + o.h }; });
   const plinth = g.kind === 'kompakt' ? g.plinthTop : g.floorY;
-  const key = JSON.stringify([holes, tr.len, g.buried, g.bodyTop, t, plinth, m.tile]);
+  /* JSON kodiert den aktuellen Wert als Text; Referenzen zwischen Objekten bleiben dabei nicht erhalten. */ const key = JSON.stringify([holes, tr.len, g.buried, g.bodyTop, t, plinth, m.tile]);
   const geo = useMemo(() => wallGeometry(tr.len, -g.buried, g.bodyTop, t, holes, plinth, m.tile, side === 'A' || side === 'C'),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [key]);
