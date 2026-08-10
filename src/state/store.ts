@@ -81,7 +81,7 @@ function loadSaved(): SavedEntry[] {
   try { return JSON.parse(localStorage.getItem(KEY + ':saved') ?? '[]'); } catch { return []; }
 }
 const persist = (s: Pick<State, 'config' | 'step' | 'visited'>) => {
-  try { localStorage.setItem(KEY + ':current', JSON.stringify({ config: s.config, step: s.step, visited: s.visited })); } catch { /* Speicher voll/gesperrt */ }
+  try { /* Dieser Wert wird im Browserprofil gespeichert und überlebt das Schließen des Tabs. */ localStorage.setItem(KEY + ':current', JSON.stringify({ config: s.config, step: s.step, visited: s.visited })); } catch { /* Speicher voll/gesperrt */ }
 };
 
 export function summaryLine(c: Config, d: Derived): string {
