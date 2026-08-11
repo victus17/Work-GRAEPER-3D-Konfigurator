@@ -18,5 +18,6 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/three/Equipment.tsx` — benannte Einheiten: `B`, `Label`, `Transformer`, `Switchgear`, `LowVoltage`, `Cabinet`, `EquipmentItem`, `WarnSign`.
 - `src/steps/StepHuelle.tsx` — benannte Einheiten: `DoorEditor`, `StepHuelle`.
 - `src/domain/layout.ts` — benannte Einheiten: `Opening`, `RoomGeom`, `Item`, `Geometry`, `ROOM_LABEL`, `mvSize`, `fieldOffsets`, `lvSize`.
+- `src/data/usecases.ts` — benannte Einheiten: `UseCase`, `USE_CASES`, `useCase`, `STEP_META`.
 
 ## Hinweise
