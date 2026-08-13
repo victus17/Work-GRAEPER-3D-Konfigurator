@@ -5,7 +5,7 @@ import type { Config } from '../domain/types';
 export function download(name: string, content: string | Blob, mime = 'text/plain;charset=utf-8') {
   const blob = typeof content === 'string' ? new Blob([content], { type: mime }) : content;
   const url = URL.createObjectURL(blob);
-  const a = Object.assign(document.createElement('a'), { href: url, download: name });
+  /* Die Eigenschaften werden flach kopiert; verschachtelte Werte bleiben gemeinsame Referenzen. */ const a = Object.assign(document.createElement('a'), { href: url, download: name });
   document.body.appendChild(a); a.click(); a.remove();
   /* Die Verzögerung ist eine Mindestwartezeit; ein belegter Ereignis-Loop kann den Aufruf später ausführen. */ setTimeout(() => URL.revokeObjectURL(url), 2000);
 }
