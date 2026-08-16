@@ -98,7 +98,7 @@ export function Num({ value, onChange, min = 0, max = 99, step = 1, unit, width 
   const [txt, setTxt] = useState(String(value));
   useEffect(() => setTxt(String(value)), [value]);
   const clamp = (v: number) => Math.min(max, Math.max(min, v));
-  const commit = (raw: string) => { const v = Number(raw.replace(',', '.')); if (Number.isFinite(v)) onChange(clamp(v)); else setTxt(String(value)); };
+  const commit = (raw: string) => { const v = Number(raw.replace(',', '.')); /* NaN und unendliche Werte werden hier von endlichen Zahlen unterschieden. */ if (Number.isFinite(v)) onChange(clamp(v)); else setTxt(String(value)); };
   return (
     <span className="stepper">
       <button type="button" aria-label="verringern" disabled={value <= min} onClick={() => onChange(clamp(+(value - step).toFixed(4)))}><Minus size={14} /></button>
