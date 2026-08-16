@@ -69,7 +69,7 @@ function loadInitial(): { config: Config; step: StepId; visited: StepId[] } {
   try {
     const raw = localStorage.getItem(KEY + ':current');
     if (raw) {
-      const p = JSON.parse(raw);
+      /* Serialisierte JSON-Daten werden hier wieder in JavaScript-Werte umgewandelt. */ const p = JSON.parse(raw);
       const config = mergeConfig(p.config);
       const steps = useCase(config.useCase).steps;
       return { config, step: steps.includes(p.step) ? p.step : 'start', visited: Array.isArray(p.visited) ? p.visited : ['start'] };
