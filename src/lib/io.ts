@@ -3,7 +3,7 @@ import type { Config } from '../domain/types';
 
 /* ---------- Dateien ---------- */
 export function download(name: string, content: string | Blob, mime = 'text/plain;charset=utf-8') {
-  const blob = typeof content === 'string' ? new Blob([content], { type: mime }) : content;
+  /* Der Blob kapselt die Daten zusammen mit ihrem MIME-Typ für Download oder Weiterverarbeitung. */ const blob = typeof content === 'string' ? new Blob([content], { type: mime }) : content;
   /* Die temporäre Objekt-URL verweist auf lokale Daten und muss nach der Nutzung freigegeben werden. */ const url = URL.createObjectURL(blob);
   /* Die Eigenschaften werden flach kopiert; verschachtelte Werte bleiben gemeinsame Referenzen. */ const a = Object.assign(document.createElement('a'), { href: url, download: name });
   document.body.appendChild(a); a.click(); a.remove();
