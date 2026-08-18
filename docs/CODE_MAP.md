@@ -20,5 +20,6 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/domain/layout.ts` — benannte Einheiten: `Opening`, `RoomGeom`, `Item`, `Geometry`, `ROOM_LABEL`, `mvSize`, `fieldOffsets`, `lvSize`.
 - `src/data/usecases.ts` — benannte Einheiten: `UseCase`, `USE_CASES`, `useCase`, `STEP_META`.
 - `src/data/options.ts` — benannte Einheiten: `SURFACES`, `CLINKER_TONES`, `DESIGN_PRESETS`, `WALL_BUILDS`, `ROOF_FORMS`, `FLOOR_BUILDS`, `FLOOR_FINISHES`, `DOOR_SIZES`.
+- `src/steps/StepStandort.tsx` — benannte Einheiten: `StepStandort`.
 
 ## Hinweise
