@@ -67,7 +67,7 @@ export function mergeConfig(input: unknown): Config {
 
 function loadInitial(): { config: Config; step: StepId; visited: StepId[] } {
   try {
-    const raw = localStorage.getItem(KEY + ':current');
+    /* Der lokale Speicher liefert Text oder null; die Auswertung erfolgt anschließend im Anwendungscode. */ const raw = localStorage.getItem(KEY + ':current');
     if (raw) {
       /* Serialisierte JSON-Daten werden hier wieder in JavaScript-Werte umgewandelt. */ const p = JSON.parse(raw);
       const config = mergeConfig(p.config);
