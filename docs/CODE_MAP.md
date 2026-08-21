@@ -24,3 +24,5 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/steps/StepStation.tsx` — benannte Einheiten: `CompactList`, `CompactDetails`, `WalkIn`, `StepStation`.
 
 ## Hinweise
+
+Die Dateiübersicht bildet den vorhandenen Repository-Stand ab; sie ist keine Liste abgeschlossener Features.
