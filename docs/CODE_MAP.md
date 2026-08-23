@@ -22,6 +22,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/data/options.ts` — benannte Einheiten: `SURFACES`, `CLINKER_TONES`, `DESIGN_PRESETS`, `WALL_BUILDS`, `ROOF_FORMS`, `FLOOR_BUILDS`, `FLOOR_FINISHES`, `DOOR_SIZES`.
 - `src/steps/StepStandort.tsx` — benannte Einheiten: `StepStandort`.
 - `src/steps/StepStation.tsx` — benannte Einheiten: `CompactList`, `CompactDetails`, `WalkIn`, `StepStation`.
+- `vite.config.ts` — Quellmodul; Details stehen direkt in der Datei.
 
 ## Hinweise
 
