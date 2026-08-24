@@ -23,6 +23,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/steps/StepStandort.tsx` — benannte Einheiten: `StepStandort`.
 - `src/steps/StepStation.tsx` — benannte Einheiten: `CompactList`, `CompactDetails`, `WalkIn`, `StepStation`.
 - `vite.config.ts` — Quellmodul; Details stehen direkt in der Datei.
+- `src/domain/calc.ts` — benannte Einheiten: `ElecCalc`, `stripSlots`, `feederCount`, `nextSize`, `calcElectrical`, `DemandResult`, `calcDemand`, `NH_SUMMARY`.
 
 ## Hinweise
 
