@@ -26,6 +26,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/domain/calc.ts` — benannte Einheiten: `ElecCalc`, `stripSlots`, `feederCount`, `nextSize`, `calcElectrical`, `DemandResult`, `calcDemand`, `NH_SUMMARY`.
 - `src/data/glossary.ts` — benannte Einheiten: `GLOSSARY`.
 - `src/data/electrical.ts` — benannte Einheiten: `KVA_STEPS`, `TrafoRow`, `TRAFO_OIL`, `TRAFO_DRY`, `trafoRow`, `TRAFO_TYPES`, `HH_FUSE`, `HH_LIMIT_KVA`.
+- `src/styles/app.css` — Styles und Darstellungsregeln.
 
 ## Hinweise
 
