@@ -27,6 +27,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/data/glossary.ts` — benannte Einheiten: `GLOSSARY`.
 - `src/data/electrical.ts` — benannte Einheiten: `KVA_STEPS`, `TrafoRow`, `TRAFO_OIL`, `TRAFO_DRY`, `trafoRow`, `TRAFO_TYPES`, `HH_FUSE`, `HH_LIMIT_KVA`.
 - `src/styles/app.css` — Styles und Darstellungsregeln.
+- `src/three/Scene.tsx` — benannte Einheiten: `Capture`, `presetPose`, `CameraRig`, `Tree`, `Ground`, `Scene`.
 
 ## Hinweise
 
