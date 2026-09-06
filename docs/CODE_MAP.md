@@ -29,6 +29,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/styles/app.css` — Styles und Darstellungsregeln.
 - `src/three/Scene.tsx` — benannte Einheiten: `Capture`, `presetPose`, `CameraRig`, `Tree`, `Ground`, `Scene`.
 - `src/main.tsx` — Quellmodul; Details stehen direkt in der Datei.
+- `src/state/store.ts` — benannte Einheiten: `ViewTab`, `CameraPreset`, `Scenery`, `SavedEntry`, `Toast`, `mergeConfig`, `loadInitial`, `loadSaved`.
 
 ## Hinweise
 
