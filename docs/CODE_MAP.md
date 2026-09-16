@@ -31,6 +31,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/main.tsx` — Quellmodul; Details stehen direkt in der Datei.
 - `src/state/store.ts` — benannte Einheiten: `ViewTab`, `CameraPreset`, `Scenery`, `SavedEntry`, `Toast`, `mergeConfig`, `loadInitial`, `loadSaved`.
 - `src/steps/StepAbschluss.tsx` — benannte Einheiten: `printDatasheet`, `StepAbschluss`.
+- `src/views/Plans.tsx` — benannte Einheiten: `Dim`, `FloorPlan`, `FieldSymbol`, `SingleLine`, `SitePlan`, `lvWidth`, `roomLabel`.
 
 ## Hinweise
 
