@@ -32,6 +32,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/state/store.ts` — benannte Einheiten: `ViewTab`, `CameraPreset`, `Scenery`, `SavedEntry`, `Toast`, `mergeConfig`, `loadInitial`, `loadSaved`.
 - `src/steps/StepAbschluss.tsx` — benannte Einheiten: `printDatasheet`, `StepAbschluss`.
 - `src/views/Plans.tsx` — benannte Einheiten: `Dim`, `FloorPlan`, `FieldSymbol`, `SingleLine`, `SitePlan`, `lvWidth`, `roomLabel`.
+- `src/domain/fit.ts` — benannte Einheiten: `FitLevel`, `FitReason`, `FitResult`, `fitCompact`, `rankCompact`, `WalkInNeed`, `walkInNeed`, `SerieFit`.
 
 ## Hinweise
 
