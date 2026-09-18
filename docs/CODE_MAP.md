@@ -34,6 +34,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/views/Plans.tsx` — benannte Einheiten: `Dim`, `FloorPlan`, `FieldSymbol`, `SingleLine`, `SitePlan`, `lvWidth`, `roomLabel`.
 - `src/domain/fit.ts` — benannte Einheiten: `FitLevel`, `FitReason`, `FitResult`, `fitCompact`, `rankCompact`, `WalkInNeed`, `walkInNeed`, `SerieFit`.
 - `src/steps/StepStart.tsx` — benannte Einheiten: `StepStart`.
+- `src/steps/StepAusstattung.tsx` — benannte Einheiten: `StepAusstattung`.
 
 ## Hinweise
 
