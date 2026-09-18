@@ -35,6 +35,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/domain/fit.ts` — benannte Einheiten: `FitLevel`, `FitReason`, `FitResult`, `fitCompact`, `rankCompact`, `WalkInNeed`, `walkInNeed`, `SerieFit`.
 - `src/steps/StepStart.tsx` — benannte Einheiten: `StepStart`.
 - `src/steps/StepAusstattung.tsx` — benannte Einheiten: `StepAusstattung`.
+- `src/domain/defaults.ts` — benannte Einheiten: `uid`, `mvFields`, `defaultWalkIn`, `defaultConfig`.
 
 ## Hinweise
 
