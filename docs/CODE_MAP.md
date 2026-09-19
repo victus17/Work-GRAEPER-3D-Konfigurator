@@ -36,6 +36,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/steps/StepStart.tsx` — benannte Einheiten: `StepStart`.
 - `src/steps/StepAusstattung.tsx` — benannte Einheiten: `StepAusstattung`.
 - `src/domain/defaults.ts` — benannte Einheiten: `uid`, `mvFields`, `defaultWalkIn`, `defaultConfig`.
+- `src/steps/StepTrafo.tsx` — benannte Einheiten: `StepTrafo`.
 
 ## Hinweise
 
