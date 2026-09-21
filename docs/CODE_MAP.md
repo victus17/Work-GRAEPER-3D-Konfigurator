@@ -43,3 +43,5 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 Die Dateiübersicht bildet den vorhandenen Repository-Stand ab; sie ist keine Liste abgeschlossener Features.
 
 Die inline ergänzten Kommentare erläutern vorhandenes Verhalten. Sie ändern keine Funktionen oder Algorithmen.
+
+Die Autorendaten dokumentieren keine an den angegebenen früheren Tagen ausgeführten Entwicklungsarbeiten.
