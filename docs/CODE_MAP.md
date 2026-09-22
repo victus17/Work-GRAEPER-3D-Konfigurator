@@ -38,6 +38,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/domain/defaults.ts` — benannte Einheiten: `uid`, `mvFields`, `defaultWalkIn`, `defaultConfig`.
 - `src/steps/StepTrafo.tsx` — benannte Einheiten: `StepTrafo`.
 - `src/data/ral.ts` — benannte Einheiten: `RalColor`, `SERIE_RAL`, `RAL`, `ral`, `ralHex`, `ralLabel`.
+- `src/App.tsx` — benannte Einheiten: `Header`, `Rail`, `Toolbar`, `Kpis`, `View`, `Panel`, `Modals`, `Toasts`.
 
 ## Hinweise
 
