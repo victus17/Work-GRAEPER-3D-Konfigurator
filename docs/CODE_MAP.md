@@ -43,6 +43,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/three/textures.ts` — benannte Einheiten: `rng`, `makeTexture`, `plasterBump`, `waschbetonMap`, `clinkerMap`, `clinkerBump`, `woodMap`, `woodBump`.
 - `src/data/stations.ts` — benannte Einheiten: `COMPACT_STATIONS`, `compactById`, `SERIE_STATIONS`, `serieById`, `TRAFOSTAENDE`, `trafostandById`, `PROFESSIONAL`, `INDIVIDUAL`.
 - `src/three/wall.ts` — benannte Einheiten: `Hole`, `wallGeometry`, `extrudeAlongX`, `hipRoof`.
+- `src/lib/format.ts` — benannte Einheiten: `nf`, `cm`, `m`, `dims`, `dimsM`, `t`, `amp`, `kva`.
 
 ## Hinweise
 
