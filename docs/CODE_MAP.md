@@ -52,3 +52,5 @@ Die Dateiübersicht bildet den vorhandenen Repository-Stand ab; sie ist keine Li
 Die inline ergänzten Kommentare erläutern vorhandenes Verhalten. Sie ändern keine Funktionen oder Algorithmen.
 
 Die Autorendaten dokumentieren keine an den angegebenen früheren Tagen ausgeführten Entwicklungsarbeiten.
+
+Code-Kommentare und Dokumentation dieser Runde wurden am 07.10.2026 erstellt; ihre Commit-Autorendaten wurden nachträglich gesetzt.
