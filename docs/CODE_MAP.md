@@ -46,6 +46,7 @@ Diese Dokumentationsrunde wurde am 07.10.2026 erstellt. Die Commit-Autorendaten 
 - `src/lib/format.ts` — benannte Einheiten: `nf`, `cm`, `m`, `dims`, `dimsM`, `t`, `amp`, `kva`.
 - `src/lib/io.ts` — benannte Einheiten: `download`, `safeName`, `copyText`, `encodeConfig`, `decodeConfig`, `api`, `usePrint`.
 - `src/domain/spec.ts` — benannte Einheiten: `accOn`, `svcOn`, `fieldCode`, `SummarySection`, `summarySections`, `BomRow`, `bom`, `specText`.
+- `src/three/materials.ts` — benannte Einheiten: `StationMaterials`, `doorColor`, `useStationMaterials`.
 
 ## Hinweise
 
