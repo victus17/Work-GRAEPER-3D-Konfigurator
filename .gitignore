@@ -1,0 +1,15 @@
+node_modules
+dist
+data/*.db
+data/*.db-*
+data/outbox/*
+.DS_Store
+*.log
+
+# Lokale Werkzeug-Einstellungen
+.claude/
+.vscode/
+.idea/
+.env
+.env.*
+!data/outbox/.gitkeep

@@ -1,0 +1,10 @@
+export const nf = (n: number, d = 0) => n.toLocaleString('de-DE', { maximumFractionDigits: d, minimumFractionDigits: d });
+export const cm = (v: number) => `${nf(v, v % 1 === 0 ? 0 : 1)} cm`;
+export const m = (vCm: number, d = 2) => `${nf(vCm / 100, d)} m`;
+export const dims = (a: number, b: number, c?: number) => [a, b, c].filter((x): x is number => x !== undefined).map((x) => nf(x, x % 1 === 0 ? 0 : 1)).join(' × ') + ' cm';
+export const dimsM = (a: number, b: number, c?: number) => [a, b, c].filter((x): x is number => x !== undefined).map((x) => nf(x / 100, 2)).join(' × ') + ' m';
+export const t = (v: number | null | undefined, d = 1) => (v == null ? '–' : `${nf(v, d)} t`);
+export const amp = (v: number) => `${nf(v)} A`;
+export const kva = (v: number) => `${nf(v)} kVA`;
+export const dateDe = (iso: string) => new Date(iso).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+export const dateTimeDe = (iso: string) => new Date(iso).toLocaleString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' });
